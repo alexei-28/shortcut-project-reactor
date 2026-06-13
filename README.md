@@ -1,2 +1,2 @@
 # shortcut-project-reactor
-Shortcut Project reactor test project
+Shortcut Project Reactor test project

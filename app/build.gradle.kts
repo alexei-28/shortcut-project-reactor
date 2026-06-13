@@ -38,7 +38,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "com.gmail.alexei28.shortcut.reactor.App"
+    mainClass = "com.gmail.alexei28.shortcut.project.reactor.App"
 }
 
 tasks.named<Test>("test") {
