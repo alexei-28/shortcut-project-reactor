@@ -21,7 +21,7 @@ public class ReactorErrorHandling {
         Mono<String> errorMono = Mono.error(new RuntimeException("Что-то пошло не так!"));
 
         errorMono
-                .doOnError(error -> logger.info("Перехват ошибки в doOnError: {}", error.getMessage()))
+                .doOnError(error -> logger.error("Перехват ошибки в doOnError: {}", error.getMessage()))
                 .onErrorReturn("Значение по умолчанию") // ← Возвращает альтернативное значение при ошибке
                 .subscribe(
                         result -> logger.info("Результат с onErrorReturn: {}", result)
